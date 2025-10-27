@@ -1,0 +1,48 @@
+# ========================================
+# 🧠 Xcode + SwiftUI Project Git Ignore
+# ========================================
+
+# --- Build artifacts ---
+build/
+DerivedData/
+
+# --- User-specific Xcode files ---
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcuserstate
+
+# --- Swift Package Manager ---
+Packages/
+Package.pins
+Package.resolved
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+
+# --- CocoaPods (if you ever add it) ---
+Pods/
+Podfile.lock
+
+# --- Carthage (if you ever add it) ---
+Carthage/
+Carthage/Build/
+
+# --- Fastlane ---
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# --- Misc ---
+*.moved-aside
+*.xcuserstate
+*.xccheckout
+*.DS_Store
+*.swp
+*.lock
+*.tmp
+
+# --- Personal API keys or secrets (optional safeguard) ---
+Secrets.swift
+*.env
