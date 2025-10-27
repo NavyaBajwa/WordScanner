@@ -46,3 +46,6 @@ fastlane/test_output
 # --- Personal API keys or secrets (optional safeguard) ---
 Secrets.swift
 *.env
+
+Config.swift
+*.xcuserstate
