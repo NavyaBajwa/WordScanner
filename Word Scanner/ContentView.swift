@@ -65,8 +65,7 @@ struct ContentView: View {
             .tag(0)
             
             .sheet(isPresented: $showDefinition) {
-                DefinitionView(word: wordToDefine, definition: "Placeholder definition: \(wordToDefine)", pronunciation: "pro-nun-ci-ation", partOfSpeech: "adjective", sentence: "sentence goes here"
-)
+                DefinitionView(searchWord: wordToDefine)
             }
             
             VStack {
