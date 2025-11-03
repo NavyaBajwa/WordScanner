@@ -15,6 +15,8 @@ struct ContentView: View {
     
     @State private var showEnterTextView: Bool = false
     
+    @StateObject private var cameraManager = CameraManager()
+    
     var body: some View {
         TabView {
             VStack {
@@ -36,18 +38,30 @@ struct ContentView: View {
                 }
 
                 //Camera layer goes here
+                CameraPreviewView(session: cameraManager.session)
+                    .frame(width: 350, height: 470)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color("myPrettyBlue").opacity(0.1), lineWidth: 2)
+                    )
+                    .onAppear {
+                        cameraManager.startSession()
+                    }
+                    .onDisappear {
+                        cameraManager.stopSession()
+                    }
                 
                 // Button to capture photo
                 Button(action: {
-                    showEnterTextView = true
-                    
+                    cameraManager.capturePhoto()
                 }) {
-                    Label("scan", systemImage: "inset.filled.circle.dashed")
+                    Label("scan", systemImage: "circle.inset.filled")
                         .foregroundColor(Color("myPrettyBlue"))
                 }
                 .labelStyle(.iconOnly)
-                .font(.system(size: 40))
-                .padding(.top, 25)
+                .font(.system(size: 50))
+                .padding(.top, 10)
                 
                 // HStack for text field and image from gallery buttons
                 HStack {
@@ -60,7 +74,7 @@ struct ContentView: View {
                     }
                     .labelStyle(.iconOnly)
                     .font(.system(size: 26))
-                    .padding(.top, 25)
+                    .padding(.top, 10)
                     
                     Button(action: {
                         print("This is to get an image from your camera roll")
@@ -71,7 +85,7 @@ struct ContentView: View {
                     }
                     .labelStyle(.iconOnly)
                     .font(.system(size: 26))
-                    .padding(.top, 25)
+                    .padding(.top, 10)
                     
                 }
                 
