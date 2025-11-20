@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DefinitionView: View {
-    let searchWord: String  // ❌ Was: let searchWord = String (should be : not =)
+    let searchWord: String 
     
     @State private var definition: Definition?
     @State private var isLoading = true
