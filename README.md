@@ -11,21 +11,21 @@ Users can scan printed text with their camera or photo library, crop a specific 
 
 ## Demo
 ### 1) Home Page
-![home screen](assets/homescreen.png)
+![home screen](Word%20Scanner/assets/homescreen.png)
 
 ### 2) Select Image from Library
 ### 2a) Select Photo
-![select photo](assets/photoSelect.png)
+![select photo](Word%20Scanner/assets/photoSelect.png)
 
 ### 2b) Crop Photo and Extract Text
-![crop and extract](assets/cropandextract.png)
+![crop and extract](Word%20Scanner/assets/cropandextract.png)
 
 ### 2c) Definition Result
-![def result](assets/photoResult.png)
+![def result](Word%20Scanner/assets/photoResult.png)
 
 ### 3) Search Word via Text Field
 ### 3a) Enter Word
-![def result](assets/textSearch.png)
+![def result](Word%20Scanner/assets/textSearch.png)
 
 ### 3b) Definition Result
-![def result](assets/textResult.png)
+![def result](Word%20Scanner/assets/textResult.png)
