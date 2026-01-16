@@ -13,7 +13,7 @@ Users can scan printed text with their camera or photo library, crop a specific 
 ### 1) Home Page
 ![home screen](Word%20Scanner/assets/homescreen.png)
 
-### 2) Select Image from Library
+### Select Image from Library
 ### 2a) Select Photo
 ![select photo](Word%20Scanner/assets/photoSelect.png)
 
@@ -23,7 +23,7 @@ Users can scan printed text with their camera or photo library, crop a specific 
 ### 2c) Definition Result
 ![def result](Word%20Scanner/assets/photoResult.png)
 
-### 3) Search Word via Text Field
+### Search Word via Text Field
 ### 3a) Enter Word
 ![def result](Word%20Scanner/assets/textSearch.png)
 
